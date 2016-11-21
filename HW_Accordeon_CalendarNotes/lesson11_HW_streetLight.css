@@ -1,0 +1,82 @@
+
+.container{
+	display: inline-block; /*что бы ширина div - была по размеру входящих в него элементов*/
+    border: 1px solid black;
+    padding: 5px;
+    /*position: relative;*/
+
+}
+
+.circle {
+	width: 50px;
+	height: 50px;
+	background: lightgrey;
+	border: 1px solid black;
+	border-radius: 50%;
+	margin-bottom: 3px;
+
+	text-align: center;
+}
+
+.circle:nth-child(1).active {
+	background: red;	
+}
+
+.circle:nth-child(2).active {
+	background: yellow	
+}
+
+.circle:nth-child(3).active {
+	background: green;	
+}
+
+.buttonCasing {
+
+	height: 10px;
+	width: 30px;
+	border: 1px solid black;
+
+	border-top-left-radius: 25%;
+	border-bottom-left-radius: 25%;
+	border-top-right-radius: 25%;
+	border-bottom-right-radius: 25%;
+
+	background: lightgrey;
+
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+/*
+    position: absolute;
+    bottom: 3px;
+    left: 25%;*/
+}
+
+.btn {
+
+	box-sizing: border-box;
+	height: 10px;
+	width: 10px;
+	border: 2px solid black;
+
+	border-top-left-radius: 25%;
+	border-bottom-left-radius: 25%;
+	border-top-right-radius: 25%;
+	border-bottom-right-radius: 25%;
+
+	background: none;
+}
+
+.btn:first-child {
+	float: left;
+	background: darkred;	
+}
+
+.btn:last-child  {
+	float: right;
+	background: darkgreen;	
+}
+
+.off {
+	visibility: hidden;
+}

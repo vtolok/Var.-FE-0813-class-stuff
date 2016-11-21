@@ -1,0 +1,79 @@
+* {
+    font-family: sans-serif;
+    color: grey;
+}
+
+
+.container{
+	display: inline-block; /*что бы ширина div - была по размеру входящих в него элементов*/
+    border: 1px solid black;
+    padding: 5px;
+    /*position: relative;*/
+}
+
+.accordBlock{
+	margin: 2px;
+	border: 1px solid lightgrey;
+    border-radius: 3px;
+    width: 480px;
+    min-height: 1.25em;
+    background: linear-gradient(to bottom, rgba(248,247,253,1) 0%, rgba(226,221,243,1) 50%, rgba(215,209,239,1) 51%, rgba(199,197,236,1) 100%);
+}
+
+.accordBlock.active{
+	 background: none;
+	 border: 1px solid grey;
+}
+
+.head_text{
+    display: inline-block;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.textBox{
+    display: inline-block;
+	border-top: 1px solid grey;
+    padding: 50px;
+    display: none;
+}
+
+.textBox.active{
+	display: block;
+}
+
+
+.head_arrow { 
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 20px;
+
+    height: 10px;
+    width: 10px;
+    background: grey;
+     -webkit-clip-path: polygon(0% 0%, 50% 50%, 0% 100%);
+
+/*    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent; 
+    border-left: 10px solid grey; 
+    border-bottom: 5px solid transparent; */
+}
+
+.head_arrow.active {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 20px;
+
+
+    height: 10px;
+    width: 10px;
+    background: grey;
+   -webkit-clip-path: polygon(0% 0%, 50% 50%, 100% 0%);
+
+/*    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent; 
+    border-right: 5px solid transparent; 
+    border-top: 10px solid grey;*/
+}

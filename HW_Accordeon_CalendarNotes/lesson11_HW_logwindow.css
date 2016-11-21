@@ -1,0 +1,183 @@
+body {
+    font-family: Helvetica, Arial, Sans-Serif;
+    color: #97999C;
+}
+
+
+.container{
+	/*display: inline-block; */
+    border: 1px dotted lightgrey;
+    padding: 5px;
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+
+.logWindow_wrapper {
+	background: #379ADB;
+
+	width: 560px;
+	height: 380px;
+
+	text-align: center;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+form {
+	width: 300px;
+	height: 315px;
+
+	background: white;
+
+	border-radius: 10px;
+
+	margin: auto;
+}
+
+form p {
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 30px;
+	margin-bottom: 10px;
+}
+
+.form_login>input, .form_password>input {
+
+	height: 50px;
+	width: 260px; 
+	background: #F0F4F5;
+
+	border-radius: 3px;
+	border: 0;
+	margin-top: 10px;
+
+	text-align: center;
+
+	font-size: 18px;
+}
+
+
+.form_submit>input {
+
+	margin: 10px auto;
+
+	height: 50px;
+	width: 260px; 
+	background: #379ADB;
+
+	border-radius: 3px;
+	border: 0;
+
+	color: white;
+	line-height: 50px;
+	font-size: 18px;
+
+}
+
+a {
+	text-decoration: none;
+	color: #97999C;
+	margin-bottom: 5px;
+}
+                
+/*.logWindow_core {
+	работают в паре: border-box + margin:auto
+	box-sizing: border-box;
+	margin: auto; 					
+
+	немного магии
+	position: relative;
+  	top: 50%;
+ 	transform: translateY(-50%);
+
+	background: white;
+	
+	border-radius: 10px;
+	padding: 25px;
+
+	width: 300px;
+	height: 280px;
+}
+
+.header {
+	height: 30%;
+	border: 1px dotted red;
+}
+
+.header>p {
+	margin: auto;
+
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 2em;
+ }
+
+.middle_part{
+	box-sizing: border-box;
+	height: 20%;
+
+	border: 1px dotted red;
+	border-radius: 3px;
+	margin: 5px;
+
+ 	background: #F0F4F5;
+}
+
+
+.middle_part>form {
+		немного магии
+	position: relative;
+  	top: 50%;
+ 	transform: translateY(-50%);
+
+ 	background: #F0F4F5
+}
+
+.middle_part>form>input {
+		немного магии
+	position: relative;
+  	top: 50%;
+ 	transform: translateY(-50%);
+
+ 	background: #F0F4F5
+}
+
+.button_part>button {
+
+	position: relative;
+  	top: 50%;
+ 	transform: translateY(-50%);
+}
+
+.button_part{
+	box-sizing: border-box;
+	height: 20%;
+
+	border: 1px dotted red;
+	border-radius: 3px;
+	margin: 5px;
+
+ 	background: #379ADB;
+}
+
+.submit_button{
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+}
+
+.footer{	
+	box-sizing: border-box;
+	height: 10%;
+	text-align: center;
+	border: 1px dotted red;
+	padding: 1px;
+}
+
+.footer>a {
+	text-decoration: none;
+	color: #97999C;
+} */

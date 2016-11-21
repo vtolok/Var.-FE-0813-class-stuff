@@ -1,0 +1,156 @@
+body {
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.container{
+	display: inline-block; /*что бы ширина div - была по размеру входящих в него элементов*/
+    border: 1px dotted lightgrey;
+    padding: 5px;
+    /*position: relative;*/
+}
+
+.calendar_container {
+	display: inline-block;
+	margin: 10px;
+	background: #38465C;
+}
+
+.calendar_field {
+	display: inline-block;
+	margin: 35px;
+	padding: 25px;
+	background: white;
+}
+
+/*------HEAD-------*/
+
+.month_selector {
+	background: #FA787A;
+	min-height: 70px;
+	font-size: 18px;
+	width: calc(7*50px);
+}
+
+.month_selector__arrow {
+	width: 20%;
+	line-height: 4.5em;
+	color: #D16464;
+	font-weight: bold;
+}
+
+.month_selector__arrow:hover {
+	background: #F2A9A2;
+	color: white;
+	transition: 0.1s;
+}
+
+.month_selector__current {
+	width: 60%;
+	line-height: 4.5em;
+	color: white;
+}
+
+.month_selector__arrow,  .month_selector__current {
+	min-height: inherit;
+	float: left;
+	text-align: center;
+}
+
+.clearfix {
+	visibility: hidden;
+	display: block;
+	clear: both;
+	content: none;
+	min-height: 0;
+	min-width: 0;
+}
+
+
+
+
+/*------TABLE------*/
+
+
+.date_selector {
+/*	font-size: 12px;*/
+}
+
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+    width: calc(7*50px);
+    height: calc(6*50px);
+}
+
+th {
+	display: ;
+	font-weight: bold;
+    border: 1px solid lightgrey;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+td {
+	box-sizing: border-box;
+	font-style: italic;
+    border: 1px solid lightgrey;
+	text-align: center;
+	font-size: 10px;
+	position: relative;
+}
+
+td:hover {
+	background: #FA787A;
+	color: white;
+	transition: 0.1s;
+}
+
+td.wrong_month_dates {
+	color: lightgrey;
+}
+
+
+td>div.dayContent {
+	/*box-sizing: border-box;*/
+	border: 1px solid #D16464;
+	border-radius: 1px;
+
+	min-height: 150px;
+	min-width: 300px;
+
+	z-index: 1;
+	background: white;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	padding: 5px;
+
+	text-align: left;
+	color: darkgrey;
+
+	visibility: hidden;
+}
+
+td>div.editable {
+	border: 1px dotted #D16464;
+
+}
+
+/*.dayContent:hover {
+	display: all;
+}*/
+
+td>div.selected {
+	visibility: visible;
+}
+
+td.selected {
+	box-sizing: border-box;
+	border: 4px solid #D1646;
+	border-radius: 1px;
+}
+
+td.filled {
+	text-decoration: underline;
+}
