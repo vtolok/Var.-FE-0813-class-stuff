@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HW2 page 1</title>
+	<meta charset="utf-8">
+
+
+
+
+
+	<style>
+
+	* 
+	{margin: 0;
+	padding: 0;
+	}
+
+	ul
+	{list-style-type: none;
+	}
+
+	a
+	{text-decoration: none;
+	}
+
+	.pagewrapper1stlayer
+	{box-sizing: border-box;
+
+	max-width: 960px;
+	min-width: 320px;
+	padding: 40px;
+	background-color: #737373;
+	}
+
+		.pagewrapper2ndlayer
+		{box-sizing: border-box;
+
+		display:table; 
+
+		width:80%;
+		margin: 0 auto;
+
+		padding: 0 10px 10px 10px;
+		background-color: white;
+		}
+
+/*---------------------------------------*/
+
+			.headderwrapper /*ПРОБЛЕМА 1: весь блок по margin сползает правее своего места*/
+			{box-sizing: border-box;
+
+			display:table; /* поставил table? ставь clearfix!*/
+
+			width:100%;
+
+			margin: 0 10px 10px 0;
+
+			background: linear-gradient(to bottom, rgba(244,246,245,1) 0%, rgba(252,252,252,1) 10%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 81%, rgba(252,252,252,1) 92%, rgba(244,246,245,1) 100%);
+			}
+
+				.head__text
+				{box-sizing: border-box;
+
+				float: left;
+
+				padding:20px 0 0 70px;
+				width: 160px;
+
+
+				text-align: left;
+				font-family: monospace;
+				font-size: 40px;
+				font-weight: bolder;
+				line-height: 0.5;
+				opacity: 0.7;
+				}
+
+				.head__image
+				{
+				float: right;
+				}
+
+
+/* ------------------------------------------- */
+
+			.bodywrapper
+			{box-sizing: border-box;
+
+			display:table;
+			width:100%;
+			height: auto; /* ВОПРОС - без этого эти поля пропадают... без этого - никак?*/
+
+			margin: 0 auto;
+
+		 	background: #687073;
+			}
+
+				.body__text
+				{box-sizing: border-box;
+
+				float: left;
+
+				padding: 10px auto;
+
+				width:70%;
+
+				background: #CCD5D9;
+				}
+
+					.body__text_block
+					{box-sizing: border-box;
+
+					padding: 10px 120px 10px 20px;
+					}
+
+						.body__text_block_header
+						{						
+						padding: 10px 0 20px 10px; 
+						text-align: left;
+						font-size: 25px;
+						opacity: 0.5;
+						}
+
+						.body__text_block_text
+						{text-align: justify;
+						font-family: monospace;
+						font-size: 15px;
+						opacity: 0.5;
+						}
+
+				.body__menu
+				{box-sizing: border-box;
+				float: right;
+
+				padding: 10px auto;
+
+				width:30%;
+				}
+
+					.body__menu_menu li
+					{box-sizing: border-box;
+
+					}
+
+					.menuobject
+					{box-sizing: border-box;
+					display: block; /*т.к. сам по себе А - строчный*/
+
+					padding: 10px 30px 10px 60px;
+
+					font-size: 12px;
+					font-weight: bolder;
+					text-align: left;
+					color: #D7DEE0;
+					}
+
+					.menuobject:hover
+					{text-decoration: underline;
+					cursor: pointer;
+					}
+
+						.body__menu_links_text
+						{box-sizing: border-box;
+						display: block; /*т.к. сам по себе А - строчный*/
+
+						padding: 20px 30px 20px 40px;
+						width: 100%;
+
+						font-size: 25px;
+						text-align: left;
+						font-weight: 300;
+						color: #D7DEE0;
+					}
+
+							.body__menu_links ul li a
+							{box-sizing: border-box;
+							display:block; /*т.к. сам по себе А - строчный*/
+					
+
+							padding: 5px 30px 5px 70px;
+
+							font-size: 10px;
+							font-weight: bolder;
+							text-align: left;
+							color: #D7DEE0;
+							}
+
+							.body__menu_links ul li:hover
+
+	.clearfix:after
+	{content: ".";
+	visibility: hidden;
+	height: 0;
+	clear: both;
+	}
+
+	</style>
+</head>
+<!-- ************ -->
+<body>
+<a href="indexHW2.html">back to menu</a>
+<br>
+<div class="pagewrapper1stlayer">
+
+	<div class="pagewrapper2ndlayer">
+
+		<div class="headderwrapper">
+			<div class="head__text">Lorem ipsum dolor</div>
+			<div class="head__image"><img src="template_1/cup.png" align="right"></div>
+
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="bodywrapper">
+
+			<div class="body__text">
+				<div class="body__text_block">
+					<div class="body__text_block_header">Lorem ipsum dolor</div>
+					<div class="body__text_block_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				</div>
+				<div class="body__text_block">					
+					<div class="body__text_block_header">Lorem ipsum dolor</div>
+					<div class="body__text_block_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="body__menu">
+				<div class="body__menu_menu">
+					<ul>
+						<li><div class="menuobject">Home</div></li>
+						<li><div class="menuobject">About Us</div></li>
+						<li><div class="menuobject">News</div></li>
+						<li><div class="menuobject">Contacts</div></li>
+						<li><div class="menuobject">Links</div></li>
+					</ul>
+					
+
+				</div>
+				<div class="body__menu_links">
+					<div class="body__menu_links_text">Links</div>
+					<ul>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">Lorem ipsum</a></li>
+						<li><a href="#">Lorem ipsum</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<p style="position: left">
+<h3><font color="red">Исходник:</font></h3>
+<hr>
+<img src="template_1/2324-lrg.jpg">
+<br>
+<a href="#to_top">to top</a>
+</p>
+
+
+</body>
+</html>

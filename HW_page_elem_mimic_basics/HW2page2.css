@@ -1,0 +1,257 @@
+
+.pagewrapper1
+{
+box-sizing: border-box;
+
+margin: 0;
+padding: 0;
+font-family: times;
+max-width: 820px;
+min-width: 320px;
+
+padding:20px;
+font-size: 14px;
+color: #BFBFBD;
+background: linear-gradient(to bottom, rgba(19,95,143,1) 0%, rgba(11,72,107,1) 22%, rgba(19,95,143,1) 41%, rgba(19,95,143,1) 60%, rgba(11,72,107,1) 84%, rgba(19,95,143,1) 100%);
+}
+
+	.pagewrapper2
+	{
+/*	box-sizing: border-box;*/
+	margin: 0 auto;
+	background: #F0F0F0;
+	width: 100%;
+	}
+
+		.headder-stripes
+		{
+		box-sizing: border-box;
+/*			border: 2px solid red;*/
+		padding: 3px 0 3px 0;
+		width: 95%;
+		background: repeating-linear-gradient(135deg, #D9D9D9 0px, #D9D9D9 1px, transparent 2px, transparent 3px);
+/*			background-size: 30px 30px;
+		background-image: linear-gradient (45deg, rgba(black, 0.1)  25%, transparent 25%, transparent 50%, rgba(black, 0.1) 50%, rgba(black, 0.1) 75%, transparent 75%, transparent);*/
+		}
+			.headder
+			{
+			box-sizing: border-box;
+			display:table; /* поставил table? ставь clearfix!*/
+			width:100%;
+			background: #F0F0F0;
+
+/*			border-style: solid;
+			border-color:  red;*/
+			}
+
+				.headder__company-name
+				 {
+			 	box-sizing: border-box;
+			 	display: inline-block;
+			 	font-size: 40px;
+			 	color: #81AD21;
+			 	float: left;
+			 	width: 20%;
+			 	padding: 5px 0 5px 20px;
+				 }
+
+				.headder__company-slogan
+				 {
+				 	box-sizing: border-box;
+			 	display: inline-block;
+			 	font-size: 9px;
+			 	float: right;
+			 	width: 30%;
+			 	text-align: center;
+			 	padding-top: 15px;
+				 }
+
+
+		.pic
+		{
+/*		box-sizing: border-box;*/
+		width: 100%;
+		height: auto;
+		}
+
+
+		.navmenu
+		{
+		box-sizing: border-box;
+		width: 100%;
+/*		border: 1px solid yellow;*/
+		}
+
+		ul 
+		{
+		margin: 0 auto;
+		padding: 0;
+		width: 100%; /*БЕЗ ЭТОГО всё сбивается в центр в кучу*/
+		box-sizing: border-box;
+		display:table;
+		list-style-type:none;
+/*		border: 2px solid green;*/
+		}
+
+			li
+			{
+			box-sizing: border-box;
+			float: left;
+			width: 20%;
+			list-style-type: none;
+			padding-top: 5px;
+/*			border: 1px solid red;*/
+			}
+
+			li	a
+				{
+				display: inline-block;
+				box-sizing: border-box;
+				color: #BFBFBD;
+				text-align: center;
+				text-decoration: none;
+				font-size: 16px;
+/*				border: 1px solid blue;*/
+				width: 100%;					/*width НЕ НАСЛЕДУЮЕТСЯ??!*/
+
+				}
+
+/*			.nav_delimeter
+			{
+			display: inline-block;
+			font-size: 8px;
+			text-align: center;
+			margin: auto;
+			width: 5%;
+			}*/
+
+/*----------------------------------------*/
+
+		.textholder
+		{
+		box-sizing: border-box;
+		width: 100%;
+		max-height: 900px;
+		padding: 20px;
+		display: table;
+
+		}
+
+/*--------- text left----------------------*/
+
+			.textholder__left
+			{
+			box-sizing: border-box;
+			display: table;
+			float:left;
+
+			width: 50%; /* КОСТЫЛЬ Ж-(  */
+			height: 100%;
+			margin: 0 auto;
+			}
+
+
+				.textholder__left_block
+				{
+					box-sizing: border-box;
+
+				}
+
+					.texthead-stripes
+						{
+						box-sizing: border-box;
+			/*			border: 2px solid red;*/
+						padding: 0 0 3px 0;
+						float:left; /* new*/
+						width: 70%; /* new*/
+/*						width: 95%;*/
+						background: repeating-linear-gradient(135deg, #D9D9D9 0px, #D9D9D9 1px, transparent 2px, transparent 3px);
+						}
+
+						.block-texthead
+						{
+						display: inline-block;
+						color: #154768;
+						background: #F0F0F0;
+						width: 100%; /* ВАЖНО - выравнивает ширину по родилелю, позволя сделать striped край*/
+
+/*						text-align: left;*/
+						font-size: 18px;
+						font-weight: bold;
+						padding: 16px 0 0 5px;
+						line-height: 0.5;
+						}
+						
+					.left_block-textbody
+					{	
+					display: inline-block;
+					box-sizing: border-box;
+/*						text-align: left;*/
+					padding: 10px;
+					}
+
+						.lorem-ipsem
+						{
+						/*display: inline;*/
+						color: #9ADE52;
+						}
+
+/*-------------text right -------------------*/
+
+			
+			.textholder__right
+			{
+			box-sizing: border-box;
+			float:right;
+
+			width: 50%;
+			height: 100%;
+
+			position: relative;
+			/*right: 70px;*/
+
+			border-left: 2px dotted #D9D9D9;
+			padding-left: 55px;
+			}
+
+				.textholder__right_block
+				{
+					box-sizing: border-box;
+				}
+
+					.right_block-textbody
+					{	
+					display: inline-block;
+					box-sizing: border-box;
+					padding: 10px 30px 10px 10px;
+					/*width: 100%;*/
+					}
+
+
+/*-------------footer -------------------*/
+
+	.footter-stripes
+	{
+	box-sizing: border-box;
+	background: repeating-linear-gradient(135deg, #D9D9D9 0px, #D9D9D9 1px, transparent 2px, transparent 3px);
+	}
+		.footter
+			{
+			display: inline-block;
+			width: 100%;				/*без этого ширина задается по границе текста*/
+
+			padding: 5px 0 7px 0;		/*padding-top: 5px; КОСТЫЛЬ :-(*/
+
+			background: #F0F0F0;		/*может быть задана только блочному классу, поэтому display: inline-block*/
+
+			font-size: 8px;
+			text-align: center;
+
+			}
+
+
+	.clearfix:after
+	{
+	visibility: hidden;
+	clear: both;
+	}

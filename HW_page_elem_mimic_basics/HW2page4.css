@@ -1,0 +1,311 @@
+
+.pagewrapper
+{
+	margin: 0 auto;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+
+.offer-talbe
+{
+		box-sizing: border-box;
+}
+.table-header
+{
+	margin: 0 auto;
+	padding: 20px 0 60px 0;
+
+	font-size: 26px;
+	color: #262626;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.cards-table
+{	
+		display: table;
+		box-sizing: border-box;
+		margin: 0 auto;
+}
+
+		div[class*="card"]{
+			transition: 0.3s;
+		}
+
+
+		.outer-card-1
+		{
+			box-sizing: border-box;
+			margin: 0;
+			float: left;
+/*			vertical-align: middle;*/				/*ПОЧЕМУ НЕ СРАБОТАЛО??*/
+			width: 280px;
+			background-color: none;
+		}
+
+		.outer-card-1:hover
+		{
+			width: 290px;
+			background-color: #2BBECF;
+			border-radius: 3px;
+			padding: 10px 4px 4px 3px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.4);
+			position: relative;
+			top: -10px;
+		}
+
+		.outer-card-2
+		{
+			box-sizing: border-box;
+			margin: 0;
+			float: left;
+			vertical-align: middle;
+			width: 280px;
+			background-color: none;
+		}
+
+		.outer-card-2:hover
+		{
+			width: 290px;
+			background-color: #EE8129;
+			border-radius: 3px;
+			padding: 10px 4px 4px 3px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.4);
+			position: relative;
+			top: -10px;
+		}
+
+
+		.outer-card-3
+		{
+			box-sizing: border-box;
+			margin: 0;
+			float: left;
+			vertical-align: middle;
+			width: 280px;
+			background-color: none;
+		}
+
+		.outer-card-3:hover
+		{
+			width: 290px;
+			background-color: #02B899;
+			border-radius: 3px;
+			padding: 10px 4px 4px 3px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.4);
+			position: relative;
+			top: -10px;
+		}
+
+
+			.inner-card
+			{ 
+				box-sizing: border-box;
+				width: 280px;
+				margin: 0 auto;
+				background-color: white;
+				border-radius: 3px;
+				box-shadow: 0 0 5px rgba(0,0,0,0.4);					
+			}
+
+				.inner-card:hover
+			{ 
+				width: 280px;
+				box-shadow: none;
+				padding-bottom: 10px;		
+			}
+
+				.card__head-1
+				{
+					
+					width: 100%;
+					height: 40px;
+					padding: 10px 0 20px 0;
+
+					background-color: #2BBECF;
+					font-size: 22px;
+					font-weight: bold;
+					color: white;
+					text-align: center;
+					text-transform: uppercase;
+				}
+
+				.card__head-2
+				{
+					
+					width: 100%;
+					height: 40px;
+					padding: 10px 0 20px 0;
+
+					background-color: #EE8129;
+					font-size: 22px;
+					font-weight: bold;
+					color: white;
+					text-align: center;
+					text-transform: uppercase;
+				}
+
+				.card__head-3
+				{
+					
+					width: 100%;
+					height: 40px;
+					padding: 10px 0 20px 0;
+
+					background-color: #02B899;
+					font-size: 22px;
+					font-weight: bold;
+					color: white;
+					text-align: center;
+					text-transform: uppercase;
+				}
+
+					.card__head_text
+					{
+						display: inline-block;
+						vertical-align: middle;
+						position: relative;						/*КОСТЫЛЬ*/
+						top: 10px;
+					}
+
+				
+				.card__body
+				{
+					box-sizing: border-box;
+					margin: 4px;
+					height:auto;
+					background: white;
+					border-radius: 1px;
+					position: relative;
+					top: -4px;
+				}
+					.card__body_top
+					{
+						display: inline-block;
+						width: 100%; 							/*REQUIRED for text centre*/	
+						padding: 20px 0 20px 0;
+						font-size: 22px;
+						text-align: center;
+						text-transform: uppercase;
+						opacity: 0.8;
+					}
+
+					.card__body_nominal
+					{
+						display: table;
+						box-sizing: border-box;
+						margin: 0 auto;
+						width: 50%;
+						padding: 5px 0 20px 0;
+						font-size: 70px;
+						color: #1F2629;
+						}
+					
+						.span_currency
+						{	
+							vertical-align: text-top;
+							font-size: 20px;
+							opacity: 0.8;
+							position: relative;
+							top: 4px;						/*КОСТЫЛЬ*/
+						}
+						.span_cost
+						{
+							vertical-align: text-top;
+							font-size: 70px;
+							font-weight: bold;
+							opacity: 0.8;
+						}
+						.span_duration
+						{
+							vertical-align: text-bottom;
+							font-size: 20px;
+							opacity: 0.8;
+						}
+
+					.card__body_options
+					{
+						width: 100%;
+					}
+
+						.options-line
+						{
+							box-sizing: border-box;
+							margin: 0 auto; /*YES this allighns block to center*/
+							width: 90%;
+							padding: 5px 30px 5px 20px;
+							border: 1px solid white;
+						}
+
+						.options-line:nth-child(even) {
+							background: #F4F2F7;
+
+						}
+
+						.options-line:nth-child(odd) {
+							background: #F0F7ED;
+						}
+
+							.options-line-chkr
+							{
+								float: left;
+								padding: 2px;
+							}
+
+							.options-line-txt
+							{
+								display: inline-block;
+								padding: 2px;
+								color: grey;
+								font-size: 15px;
+							}
+
+							.clearfix 
+							{
+								clear: both;
+							}
+
+					.card__body_button
+					{
+						box-sizing: border-box;
+						width: 80%
+						margin: 0 auto;
+						padding: 20px;
+					}
+
+					button{
+						border: none;
+					}
+
+					.button-1
+					{
+						background:#EE8129;
+						width: 100%;
+						padding: 10px 0 10px 0;
+						border-radius: 4px;
+						box-shadow: #d67124 0 3px 0;				
+		
+						font-size: 14px;
+						font-weight: bold;
+						color: white;
+						text-align: center;
+						text-transform: uppercase;		
+					}
+
+
+					.button-2
+					{
+						background:#2D6DA6;
+						width: 100%;
+						padding: 10px 0 10px 0;
+						border-radius: 4px;
+						box-shadow: #1F4363 0 3px 0;				
+		
+						font-size: 14px;
+						font-weight: bold;
+						color: white;
+						text-align: center;
+						text-transform: uppercase;		
+					}
+			
